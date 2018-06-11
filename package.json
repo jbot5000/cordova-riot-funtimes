@@ -1,18 +1,23 @@
 {
-    "name": "com.example.hello",
-    "displayName": "HelloWorld",
+    "name": "com.test.jbot",
+    "displayName": "Jbot Test App",
     "version": "1.0.0",
     "description": "A sample Apache Cordova application that responds to the deviceready event.",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "riot": "riot ./tags ./www/js/tags.min.js",
-        "browser": "riot ./tags ./www/js/tags.min.js && cordova build browser && cordova run browser",
-        "android": "riot ./tags ./www/js/tags.min.js && cordova build android && cordova run android"
+        "riot:concat": "riot ./tags ./www/js/tags.min.js",
+        "cbb": "cordova build browser",
+        "cba": "cordova build android",
+        "crb": "cordova run browser",
+        "cra": "cordova run android",
+        "browser": "npm run riot:concat && npm run cbb && npm run crb",
+        "android": "npm run riot:concat && npm run cba && npm run cra"
     },
-    "author": "Apache Cordova Team",
+    "author": "jbot5000",
     "license": "Apache-2.0",
     "dependencies": {
-        "riot": "^3.10.1"
+        "riot": "^3.10.1",
+        "sass": "^1.5.1"
     }
 }
