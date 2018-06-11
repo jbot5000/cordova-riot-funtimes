@@ -7,14 +7,14 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "riot:concat": "riot ./tags ./www/js/tags.min.js",
-        "autoprefix": "postcss ./www/css/*.css --use autoprefixer -r",
         "sass": "sass ./scss:www/css",
+        "autoprefix": "postcss ./www/css/*.css --use autoprefixer -r",
         "cbb": "cordova build browser",
         "cba": "cordova build android",
         "crb": "cordova run browser",
         "cra": "cordova run android",
-        "browser": "npm run riot:concat && npm run sass && npm run cbb && npm run crb",
-        "android": "npm run riot:concat && npm run sass && npm run cba && npm run cra"
+        "browser": "npm run riot:concat && npm run sass && npm run autoprefix && npm run cbb && npm run crb",
+        "android": "npm run riot:concat && npm run sass && npm run autoprefix && npm run cba && npm run cra"
     },
     "author": "jbot5000",
     "license": "Apache-2.0",
