@@ -1,5 +1,5 @@
 <device-ready id="deviceready">
-    <p class="event listening" hide="{received}">Connecting to Device</p>
+    <p class="event listening blink" hide="{received}">Connecting to Device</p>
     <p class="event received" show="{received}">Device is Ready</p>
     <script>
         var tag = this;

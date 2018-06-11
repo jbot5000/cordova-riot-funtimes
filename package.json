@@ -7,12 +7,13 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "riot:concat": "riot ./tags ./www/js/tags.min.js",
+        "sass": "sass ./scss:www/css",
         "cbb": "cordova build browser",
         "cba": "cordova build android",
         "crb": "cordova run browser",
         "cra": "cordova run android",
-        "browser": "npm run riot:concat && npm run cbb && npm run crb",
-        "android": "npm run riot:concat && npm run cba && npm run cra"
+        "browser": "npm run riot:concat && npm run sass && npm run cbb && npm run crb",
+        "android": "npm run riot:concat && npm run sass && npm run cba && npm run cra"
     },
     "author": "jbot5000",
     "license": "Apache-2.0",
