@@ -20,7 +20,7 @@
 var app = {
     // Application Constructor
     initialize: () => {
-        console.log('app initialized!');
+        riot.mount('*');
     },
 };
 
