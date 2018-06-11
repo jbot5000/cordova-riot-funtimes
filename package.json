@@ -7,6 +7,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "riot:concat": "riot ./tags ./www/js/tags.min.js",
+        "autoprefix": "postcss ./www/css/*.css --use autoprefixer -r",
         "sass": "sass ./scss:www/css",
         "cbb": "cordova build browser",
         "cba": "cordova build android",
@@ -18,6 +19,8 @@
     "author": "jbot5000",
     "license": "Apache-2.0",
     "dependencies": {
+        "autoprefixer": "^8.6.2",
+        "postcss-cli": "^5.0.0",
         "riot": "^3.10.1",
         "sass": "^1.5.1"
     }
