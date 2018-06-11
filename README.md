@@ -2,7 +2,7 @@
 
 Put tags in `tags`. They will compile to a concatenated file. To manually concatenate:
 
-```npm run riot```
+```npm run riot:concat```
 
 To compile tags _and_ build and run cordova for a respective platform"
 
