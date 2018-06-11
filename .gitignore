@@ -1,6 +1,7 @@
 .DS_Store
 node_modules
 package_lock.json
-platforms
+platforms/*
 .vscode
-www/css
+/www/css/*
+/www/js/tags.min.js

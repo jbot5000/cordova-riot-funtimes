@@ -6,8 +6,14 @@ button {
     border: 1px solid grey;
     font-size: inherit;
     border-radius: 4px;
-}
-
-turd button {
-    margin: 1em;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    &:hover {
+        transform: scale(1.1);
+    }
+    &:hover,
+    &:focus {
+        color: orange;
+        border: 1px solid currentColor;
+    }
 }
