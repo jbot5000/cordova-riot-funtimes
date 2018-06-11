@@ -1,4 +1,5 @@
 .DS_Store
 node_modules
 package_lock.json
-www/
+platforms/
+.vscode
